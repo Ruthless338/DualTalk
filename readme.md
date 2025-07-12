@@ -30,7 +30,6 @@ Official PyTorch implementation for the paper:
 - CUDA 11.3
 - ffmpeg
 - **[MPI-IS/mesh](https://github.com/MPI-IS/mesh)**	
-- pytorch3d
 
 Clone the repo:
   ```bash
@@ -75,27 +74,20 @@ The results will be saved to `result_DualTalk` folder.
 ## **Dataset**
 Download the dataset from [DualTalk_Dataset](https://huggingface.co/datasets/ZiqiaoPeng/DualTalk_Dataset), unzip it, and place it in the data folder.
 The data folder format is as follows:
-```
-data/
-├── train/
-│   ├── xxx_speaker1.wav          # Speaker 1 audio files
-│   ├── xxx_speaker1.npz          # Speaker 1 FLAME parameters
-│   ├── xxx_speaker2.wav          # Speaker 2 audio files
-│   ├── xxx_speaker2.npz          # Speaker 2 FLAME parameters
-│   └── ...
-├── test/
-│   ├── xxx_speaker1.wav
-│   ├── xxx_speaker1.npz
-│   ├── xxx_speaker2.wav
-│   ├── xxx_speaker2.npz
-│   └── ...
-└── ood/                          # Out-of-distribution test data
-    ├── xxx_speaker1.wav
-    ├── xxx_speaker1.npz
-    ├── xxx_speaker2.wav
-    ├── xxx_speaker2.npz
-    └── ...
-```
+- data
+	- train
+		- xxx.npz
+		- xxx.wav
+		- ...
+	- test
+		- xxx.npz
+		- xxx.wav
+		- ...
+	- ood
+		- xxx.npz
+		- xxx.wav
+		- ...
+
 
 
 ## **Training and Testing**
