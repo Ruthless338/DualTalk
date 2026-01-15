@@ -40,7 +40,7 @@ if platform.system() == "Linux":
     os.environ['PYOPENGL_PLATFORM'] = 'egl'
 
 # export HF_ENDPOINT=https://hf-mirror.com
-# os.environ["HF_ENDPOINT"] = "https://hf-mirror.com"
+os.environ["HF_ENDPOINT"] = "https://hf-mirror.com"
 
 def render_mesh_helper(mesh, t_center, rot=np.zeros(3), tex_img=None, z_offset=0, template_type: str = "flame", rgb_per_v = None):
     

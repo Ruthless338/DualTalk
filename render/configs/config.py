@@ -91,7 +91,7 @@ cfg.test_dataset = 'now'
 
 # ---------------------------------------------------------------------------- #
 
-cfg.flame_geom_path = './render/data/FLAME2020/generic_model.pkl'
+cfg.flame_geom_path = './render/data/FLAME2020/FLAME2020/generic_model.pkl'
 cfg.flame_template_path = './render/data/uv_template.obj'
 cfg.flame_lmk_path = './render/data/landmark_embedding.npy'
 cfg.tex_space_path = './render/data/FLAME2020/FLAME_texture.npz'
